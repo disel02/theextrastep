@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tes.in.theextrastep">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/applogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/applogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".VideoActivity"
+            android:noHistory="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:noHistory="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Notes_list1"
+            android:noHistory="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Notes_list2"
+            android:noHistory="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MenuActivity"
+            android:label="@string/app_name"
+            android:noHistory="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".DownloadsActivity"
+            android:noHistory="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChpasswordActivity"
+            android:noHistory="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Wizard1"
+            android:screenOrientation="portrait" />
+        <activity android:name=".PDFviewActivity" />
+        <activity
+            android:name=".Video_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Payment"
+            android:screenOrientation="portrait" />
+        <activity android:name=".DetailsActivity" />
+        <activity android:name=".InstamojoActivity"></activity>
+    </application>
+
+</manifest>

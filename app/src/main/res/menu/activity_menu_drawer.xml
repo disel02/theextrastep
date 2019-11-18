@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_downloads"
+            android:icon="@drawable/downloading4"
+            android:title="Downloads" />
+        <item
+            android:id="@+id/nav_chpassword"
+            android:icon="@drawable/lock4"
+            android:title="Change password" />
+        <item
+            android:id="@+id/nav_details"
+            android:icon="@drawable/details"
+            android:title="Details" />
+    </group>
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_call"
+                android:icon="@drawable/telephone"
+                android:title="Call" />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bg"
+    tools:context="com.tes.in.theextrastep.InstamojoActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="0dp"
+            android:layout_height="60dp">
+            <TextView
+                android:layout_gravity="center"
+                android:text="payment gateway"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal|bold" />
+            <View android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+            <TextView
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:text="Done"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/tvdone"/>
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/white_palat"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <WebView
+                android:layout_marginTop="0dp"
+                android:id="@+id/webView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </WebView>
+        </LinearLayout>
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        />
+
+    <io.netopen.hotbitmapgg.library.view.RingProgressBar
+        android:id="@+id/progress_bar"
+        android:background="@drawable/buttonfee"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:foregroundGravity="center"
+        app:max="100"
+        app:ringColor="@color/blue"
+        app:ringProgressColor="@color/colorAccent"
+        app:ringWidth="8dp"
+        app:style="STROKE"
+        app:textColor="@color/colorAccent"
+        app:textIsShow="true"
+        app:textSize="18sp" />
+
+</RelativeLayout>
