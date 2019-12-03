@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/splash_bg"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.tes.in.theextrastep.MenuActivity"
+    tools:context=".MenuActivity"
     tools:showIn="@layout/app_bar_menu">
 
     <LinearLayout

@@ -6,7 +6,7 @@
     android:background="@color/orangelight"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context="com.tes.in.theextrastep.MainActivity">
+    tools:context=".MainActivity">
 
     <pl.droidsonroids.gif.GifTextView
         android:layout_width="400dp"
